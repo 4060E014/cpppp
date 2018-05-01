@@ -1,8 +1,5 @@
 4/10
-
-```
-12123
-```
+===================
 #include <iostream>
 using namespace std;
 
@@ -35,14 +32,60 @@ int main()
   system("pause"); 
   return 0;
 }
+=====================
 
-```
-```
 ![result]()
-```
-```
+
 4/17
 ```
 4/24
-球體積
+===============
+#include <iostream> 
+#define PI 3.14 
+
+using namespace std; 
+class Circle 
+{ 
+private: 
+double mRadius; 
+public: 
+Circle():mRadius(1) 
+{} 
+~Circle(){} 
+void setRadius(double rad) 
+{ 
+mRadius=rad;  
+} 
+void getRadius() 
+{ 
+cout<<"半徑="<<mRadius<<"\n";
+} 
+void getPerimeter() 
+{ 
+cout<<"體積="<<4/3*PI*mRadius*mRadius*mRadius<<"\n";
+} 
+void getArea() 
+{ 
+cout<<"面積="<<PI*mRadius*mRadius<<"\n";
+} 
+}; 
+
+int main() 
+{ 
+int radius; 
+Circle cir; 
+cout<<"半徑:"; 
+cin>>radius; 
+cout<<"\n"; 
+cir.setRadius(radius); 
+cir.getRadius(); 
+cir.getPerimeter(); 
+cir.getArea(); 
+
+system("pause"); 
+return 0; 
+
+} 
+
+====================
 
