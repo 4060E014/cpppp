@@ -2,7 +2,7 @@
 作業
 ```
 4/10
-
+```
 #include <iostream>
 using namespace std;
 
